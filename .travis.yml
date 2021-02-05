@@ -1,12 +1,15 @@
 language: node_js
 node_js:
-  - node
+- node
 sudo: false
 script:
-  - npm test
+- npm test
 deploy:
   provider: heroku
   api_key:
-    secure: $HEROKU_KEY
-  app: devops-ultimate
+    secure: "$HEROKU_KEY"
+  app: app-udemy-devops
   edge: true
+deply:
+  api_key:
+    secure: n0I2bR7VxwMeGaQh6+zZO36mEvGWiHqu17RKHuTJoP3Aoc7x3wHSs6QPKPeV8SbRRqNfRV2h3Nd+p/1761wa1U6gDRPbQWxA4eLdumKm8+n0tULCtT1QKjLel7/z4M0dQLkNlFVw0vnbWVRHfQSEx/oPMl76F7XZeI0Ho7ox4cMSJOoFxSdexwhAnhLYBCtdms1pibJY8yn7d384I9acp6QTZV6QprXcD60UyXwMXiajWT7r+HR6YUJTeULQYIlWhtnVd0hJzXeW7lqk3lPanFvJhsGEZ/GqzbGv82rXc/A0/NxRwyRMuqWPBTdq+uPi6S2D3ntMEjmaYmX0kqvz6uEXYIKgmsPIuYKOUCAPDTjW4rrsjqtW/0zoal3eVrYlmEzeYR/F8e4JLSvfHtl+KLdLTuOhf8ONHQZ5SNPfiQEegwws/gbfH9FFbOSZgqVHQoFwSW8Bc8byZnHtQy2G2vXeoFjCh6tDGzoIVkf1buDpTVjwsgT7ZoyHa5kK8/2B20FAN9PBI7moMpNhWeZ46ERS09ch0HAXUIENYUpu8XWKWEkbyfm9E20wUNz+ZgfI7T6YWhjkA0OdhJlBIiBtIEFYYAoWU5CQ2Mjk4NmjPb9sHGvG99rglE80+hF9hjfJwsk+Agom8Rm86cnE/+fUX4epy/9ti5+quZ4H5Lvi1Lo=
